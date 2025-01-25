@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+
+        <div class="n-left">
+            <a href="index.html">
+            <img src="pics/logo.png" class="logo">
+             </a> 
+            <ul>
+                <li><img src="pics/notification.png" class="notified"></li>
+                <li><img src="pics/inbox.png" class="inbox"></li>
+                <li><img src="pics/video.png" class="video"></li>
+
+            </ul>
+
+        </div>
+
+        <div class="n-right">
+
+            <div class="search-box">
+                <img src="pics/search.png">
+                <input type="text" placeholder="Search" class="search">
+            </div>
+
+            <div class="user-icon online" onclick="settingMenuToggle()">
+                <img src="pics/profile-pic.png" class="profile-pic">
+            </div>
+
+        </div>
+
+        <div class="setting-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+
+                <div class="user-pic">
+                    <img src="pics/profile-pic.png">
+                    <div class="user-name">
+                        
+                        <p>John Nicholson</p>
+                        <a href="profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                
+                <div class="user-pic">
+                    <img src="pics/feedback.png">
+                    <div class="user-name">
+                        
+                        <p>Give feedback</p>
+                        <a href="#">Help us</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="pics/setting.png" class="setting-icon">
+                    <a href="#">setting & Privacy <img src="pics/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="pics/help.png" class="setting-icon">
+                    <a href="#">Help Center <img src="pics/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="pics/display.png" class="setting-icon">
+                    <a href="#">Display & Access <img src="pics/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="pics/logout.png" class="setting-icon">
+                    <a href="#">Logout <img src="pics/arrow.png" width="10px"></a>
+                </div>
+
+            </div>
+             
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+
+        <!-- < -----------------------Left-side------------------------->
+        <div class="left-side">
+
+            <div class="imp-links">
+                <a href="#"><img src="pics/news.png">Latest News</a>
+                <a href="#"><img src="pics/friends.png">Friends</a>
+                <a href="#"><img src="pics/group.png">Groups</a>
+                <a href="#"><img src="pics/marketplace.png">Marketplace</a>
+                <a href="#"><img src="pics/watch.png">Watch</a>
+                <a href="#">See More</a>
+
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="pics/shortcut-1.png">Web Developer</a>
+                <a href="#"><img src="pics/shortcut-2.png">Web Design Course</a>
+                <a href="#"><img src="pics/shortcut-3.png">Full stack desvelopment</a>
+                <a href="#"><img src="pics/shortcut-4.png">Web Experts</a>
+
+            </div>
+        </div>
+
+        <!-- < -----------------------mid-side------------------------->
+
+        <div class="mid-side">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="pics/upload.png">
+                    <p>Add to story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="pics/member-1.png">
+                    <p>Alison</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="pics/member-2.png">
+                    <p>Elon Musk</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="pics/member-3.png">
+                    <p>Alina</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="pics/member-4.png">
+                    <p>Bill Gates</p>
+                </div>
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-pic">
+                    <img src="pics/profile-pic.png">
+                    <div class="user-name">
+
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input">
+                    <textarea rows="3" placeholder="What's on your mind"></textarea>
+
+                    <div class="post-link">
+                        <a href="#"><img src="pics/live-video.png">Live Video</a>
+                        <a href="#"><img src="pics/photo.png">Photo/Videos</a>
+                        <a href="#"><img src="pics/feeling.png">Feeling Actitivty</a>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <!-- < -------------------------------Post 1-------------------------------> 
+
+            <div class="post-content">
+
+                <div class="post-row">
+
+
+                    <div class="user-pic">
+                        <img src="pics/profile-pic.png">
+                        <div class="user-name">
+
+                            <p>John Nicholson</p>
+                            <span>23 June 2023 13:42pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe our Youtubechannel <span>@Ws cube Tech </span>channel for more
+                    videos related to different programming languages
+                    tutoials <a href="#">#Programmingcourse</a><a href="#">Youtubechannel</a></p>
+
+                <img src="pics/feed-image-1.png" class="feed1">
+                <div class="post-row">
+
+                    <div class="icon">
+                        <div><img src="pics/like-blue.png">120</div>
+                        <div><img src="pics/comments.png">39</div>
+                        <div><img src="pics/share.png">14</div>
+
+                    </div>
+                    <div class="post-profile">
+                        <img src="pics/profile-pic.png"><i class="fas fa-caret-down"></i>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- <-------------------------Post 2---------------------------> 
+
+
+            <div class="post-content">
+
+                <div class="post-row">
+
+
+                    <div class="user-pic">
+                        <img src="pics/profile-pic.png">
+                        <div class="user-name">
+
+                            <p>Ben stokes</p>
+                            <span>26 june 2023 12:52pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Like and share this channel <span>@Ws cube Tech </span> for more
+                    courses related to different computer problems
+                    tutoials <a href="#">#Programmingcourse</a><a href="#">Youtubechannel</a></p>
+
+                <img src="pics/feed-image-2.png" class="feed1">
+                <div class="post-row">
+
+                    <div class="icon">
+                        <div><img src="pics/like.png">77</div>
+                        <div><img src="pics/comments.png">44</div>
+                        <div><img src="pics/share.png">33</div>
+
+                    </div>
+                    <div class="post-profile">
+                        <img src="pics/profile-pic.png"><i class="fas fa-caret-down"></i>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- <----------------------------Post 3------------------------> 
+
+
+
+            <div class="post-content">
+
+                <div class="post-row">
+
+                    
+                    <div class="user-pic">
+                        <img src="pics/profile-pic.png">
+                        <div class="user-name">
+                            
+                            <p>John Nicholson</p>
+                            <span>23 June 2023 13:42pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe our Youtubechannel <span>@Ws cube Tech </span>channel for more
+                    videos related to different programming languages
+                    tutoials <a href="#">#Programmingcourse</a><a href="#">Youtubechannel</a></p>
+
+                <img src="pics/feed-image-3.png" class="feed1">
+                <div class="post-row">
+
+                    <div class="icon">
+                        <div><img src="pics/like.png">120</div>
+                        <div><img src="pics/comments.png">39</div>
+                        <div><img src="pics/share.png">14</div>
+                        
+                    </div>
+                    <div class="post-profile">
+                        <img src="pics/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- <-------------------------Post 4---------------------------> 
+
+
+
+            <div class="post-content">
+
+                <div class="post-row">
+
+                    
+                    <div class="user-pic">
+                        <img src="pics/profile-pic.png">
+                        <div class="user-name">
+                            
+                            <p>John Nicholson</p>
+                            <span>23 June 2023 13:42pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe our Youtubechannel <span>@Ws cube Tech </span>channel for more
+                    videos related to different programming languages
+                    tutoials <a href="#">#Programmingcourse</a><a href="#">Youtubechannel</a></p>
+
+                <img src="pics/feed-image-4.png" class="feed1">
+                <div class="post-row">
+
+                    <div class="icon">
+                        <div><img src="pics/like.png">120</div>
+                        <div><img src="pics/comments.png">39</div>
+                        <div><img src="pics/share.png">14</div>
+                        
+                    </div>
+                    <div class="post-profile">
+                        <img src="pics/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- <-------------------------------Post 5--------------------> 
+
+
+
+
+
+            <div class="post-content">
+
+                <div class="post-row">
+
+                    
+                    <div class="user-pic">
+                        <img src="pics/profile-pic.png">
+                        <div class="user-name">
+                            
+                            <p>John Nicholson</p>
+                            <span>23 June 2023 13:42pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe our Youtubechannel <span>@Ws cube Tech </span>channel for more
+                    videos related to different programming languages
+                    tutoials <a href="#">#Programmingcourse</a><a href="#">Youtubechannel</a></p>
+
+                <img src="pics/feed-image-5.png" class="feed1">
+                <div class="post-row">
+
+                    <div class="icon">
+                        <div><img src="pics/like-blue.png">250</div>
+                        <div><img src="pics/comments.png">130</div>
+                        <div><img src="pics/share.png">17</div>
+                        
+                    </div>
+                    <div class="post-profile">
+                        <img src="pics/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <button type="button" class="load">Load More</button>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+        </div>
+
+        <!-- < -----------------------right-side------------------------->
+
+        <div class="right-side">
+
+            <div class="right-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+
+            </div>
+            <div class="right-title">
+                <h4>Advertisent</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="pics/advertisement.png" class="ads-img">
+            <div class="right-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="pics/member-1.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="pics/member-2.png">
+                </div>
+                <p>johny andrew</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="pics/member-3.png">
+                </div>
+                <p>Elon Musk</p>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy;Copyright reserved 2023 - Easy Tutorials</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
